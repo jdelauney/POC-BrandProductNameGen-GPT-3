@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Brand product name AI Generator </title>
+  <meta name="Description" content="Description"/>
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <section class="container" style="--my:2em;">
+    <header>
+      <h1>Brand, product name generator with AI</h1>
+      <p>Génère des noms potentiels pour votre marque ou produit, propulsé par l'IA OpenAI - GPT 3</p>
+    </header>
+    <article style="--mt:var(--spacing);">
+      <form style="--mb:2em;">
+        <label for="apikey">Votre clef API </label>
+        <input type="text" id="apikey" name="apikey" placeholder="sk-06ApiKeyApiKeyApiKeyApiKey" required/>
+        <small>Ouvrez un compte sur <a href="https://beta.openai.com" target="_blank" rel="nofollow norefferer">OpenAPI</a> puis <a href="https://beta.openai.com/account/api-keys" rel="nofollow norefferer">générez votre clef</a> </small>
+        <label for="typeName">Type de nom</label>
+        <select id="typeName" name="typeName" required>
+          <option value="none" selected disabled hidden>Sélectionnez une option</option>
+          <option value="un business">Business</option>
+          <option value="une société">Société</option>
+          <option value="une marque">Marque</option>
+          <option value="un produit">Produit</option>
+          <option value="un service en ligne">Service en ligne</option>
+          <option value="une application">Application web</option>
+          <option value="une application mobile">Application mobile</option>
+          <option value="une application multi-plateforme">Application multi-plateforme</option>
+        </select>
+        <label for="theme">Mots clefs séparés par une virgule définissant le thème de votre nom</label>
+        <input type="text" id="theme" name="theme" placeholder="Editeur, video, intro, youtube" required/>
+        <label for="genre">Genre</label>
+        <select id="genre" name="genre" multiple size="10">
+          <option value="none" selected disabled hidden>Sélectionnez une ou plusieurs options</option>
+          <option value="unique">unique</option>
+          <option value="brandable">brandable</option>
+          <option value="joyeux">joyeux</option>
+          <option value="amical">amical</option>
+          <option value="moderne">moderne</option>
+          <option value="futuriste">futuriste</option>
+          <option value="vintage">vintage</option>
+          <option value="old school">old school</option>
+          <option value="glamour">glamour</option>
+          <option value="sexy">sexy</option>
+          <option value="percutant">percutant</option>
+          <option value="fantaisiste">fantaisiste</option>
+          <option value="innovant">innovant</option>
+          <option value="décalé">décalé</option>
+          <option value="dynamique">dynamique</option>
+          <option value="écologique">écologique</option>
+          <option value="scientifique">scientifique</option>
+          <option value="facile à retenir">facile à retenir</option>
+          <option value="technique">technique</option>
+          <option value="inspirant confiance">inspirant confiance</option>
+        </select>
+        <small>Appuyez sur CTRL + click pour sélectionner plusieurs options</small>
+        <label for="num">Nombre de propositions à générer</label>
+        <select id="num" name="num">
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
+        <footer style="--pt:2em; --pr:var(--spacing);">
+          <button class="btn--block">Générer</button>
+        </footer>
+      </form>
+      <footer class="card" style="--p:1em;">
+        <p style="--ta:center;">Remplissez et soumettez le formulaire</p>
+      </footer>
+    </article>
+  </section>
+  <script src="./scripts/app.ts"></script>
+</body>
+</html>

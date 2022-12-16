@@ -1,0 +1,21 @@
+{
+  "name": "brand-product-name-ai-generator",
+  "version": "1.0.0",
+  "description": "Générateur de nom de marque, business, produit avec GPT-3 OpenAI",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite dev",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "J.Delauney",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "vite": "^4.0.1"
+  },
+  "dependencies": {
+    "sass-swing": "^1.3.0"
+  }
+}
